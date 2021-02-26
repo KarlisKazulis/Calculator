@@ -68,14 +68,14 @@ class ViewController: UIViewController {
             secondNum += String(sender.tag)
             numOnScreen.text = secondNum
         }
-        else if operation != "" && haveResult {    //
+        else if operation != "" && haveResult {
             numAfterResult += String(sender.tag)
             numOnScreen.text = numAfterResult
         }
     }
     
     
-    @IBAction func clear(_ sender: Any) {
+    @IBAction func clear(_ sender: Any) {        //when the clear button is clicked
         firstNum = ""
         operation = ""
         secondNum = ""
